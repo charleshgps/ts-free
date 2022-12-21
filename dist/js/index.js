@@ -49,3 +49,32 @@ const camisa = {
     name: "Camisa",
     size: Size.G,
 };
+//Literal types
+let teste;
+//teste: "outrovalor";
+teste = "autenticado";
+teste = null;
+//Funções
+function sum(a, b) {
+    return a + b;
+}
+console.log(sum(12, 12));
+function sayHelloTo(name) {
+    return `Hello ${name}`;
+}
+console.log(sayHelloTo("Charles"));
+function logger(msg) {
+    console.log(msg);
+}
+logger("teste");
+function greeting(name, greet) {
+    if (greet) {
+        console.log(`Olá ${greet} ${name}`);
+        return;
+    }
+    else {
+        console.log(`Olá ${name}`);
+    }
+}
+greeting("Charles");
+greeting("Charles", "Sir");

@@ -67,3 +67,41 @@ const camisa = {
   name: "Camisa",
   size: Size.G,
 };
+
+//Literal types
+
+let teste: "autenticado" | null;
+//teste: "outrovalor";
+teste = "autenticado";
+teste = null;
+
+//Funções
+
+function sum(a: number, b: number) {
+  return a + b;
+}
+
+console.log(sum(12, 12));
+
+function sayHelloTo(name: string): string {
+  return `Hello ${name}`;
+}
+console.log(sayHelloTo("Charles"));
+
+function logger(msg: string): void {
+  console.log(msg);
+}
+
+logger("teste");
+
+function greeting(name: string, greet?: string) {
+  if (greet) {
+    console.log(`Olá ${greet} ${name}`);
+    return;
+  } else {
+    console.log(`Olá ${name}`);
+  }
+}
+
+greeting("Charles");
+greeting("Charles", "Sir");
